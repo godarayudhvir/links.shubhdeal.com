@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shubhdeal Backpanel</title>
+  <meta name="description" content="Bakcend page for ShubhDeal Staff to use">
+  <meta name="author" content="Cyber Alliance India">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="https://link.shubhdeal.com/img/apple-touch.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/main-dark.css">
+
+  <!-- Brand Styles -->
+  <link rel="stylesheet" href="css/brands.css">
+
+  <!-- 3rd Party CSS -->
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 10%">
+
+        <!-- Your Image Here -->
+        <!-- <img class="fadein" src="img/new/Logo Banner 4X.png" alt="shubhdeal logo"> -->
+
+        <!-- Title -->
+        <h1>ShubhDeal</h1>
+
+        <!-- Short Bio -->
+        <p>Hi this page is for Strictly Shubhdeal staff only, <br> we request you to exit this page if you aren't a Staff member.</p>
+
+        <!-- SAlE -->
+        <a class="button button-col1 button-entrance hvr-grow hvr-icon-wobble-vertical" href="https://forms.gle/zTamrDpLtSTY6Aof8" target="_blank" rel="noopener">
+          <img class="icon fadein hvr-icon" src="img/bp/form.png" alt="form icon">SALES</a>
+        <br>
+
+        <!-- REPAIR -->
+        <a class="button button-col1 button-entrance hvr-grow hvr-icon-wobble-vertical" href="https://forms.gle/anZ7wCr4v8mSqiwP6" target="_blank" rel="noopener">
+          <img class="icon fadein hvr-icon" src="img/bp/repair.png" alt="repair icon">REPAIR</a>
+        <br>        
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/push.min.js"></script>
+  <script src="js/vendor/serviceWorker.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+
+</body>
+
+</html>

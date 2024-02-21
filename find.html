@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ShubhDeal | Find us</title>
+  <meta name="description" content="Shubhdeal Locations across India">
+  <meta name="author" content="Yudhvir Singh Godara">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="ShubhDeal | Social" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://link.shubhdeal.com/img/og.image/og.social.192.png" />
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="https://link.shubhdeal.com/img/apple-touch.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/main-dark.css">
+
+  <!-- Brand Styles -->
+  <link rel="stylesheet" href="css/brands.css">
+
+  <!-- 3rd Party CSS -->
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 10%">
+
+        <!-- Your Image Here -->
+        <!-- <img class="fadein" src="img/logo.png" width="331" height="83.6" alt="ca logo"> -->
+
+        <!-- Title -->
+        <h1>ShubhDeal</h1>
+
+      <br>
+
+      <p>
+        <a href="index.html">⬅️ Back to main page</a>
+      </p>
+
+       <!-- Category hero image -->
+       <img src="img/heroes/find.svg" width="200px"  height="200px">   
+       <br>
+        <!-- Short Bio -->
+        <p>Our stores are located at the following places. 😊</p>
+
+        <!-- Delhi -->
+        <a class="button button-col1 button-entrance hvr-grow hvr-icon-wobble-vertical" href="https://goo.gl/maps/r6KgAMWQhLmXxCip8" target="_blank" rel="noopener">
+          <img class="icon fadein hvr-icon" src="img/icons/gmaps.png" alt="location Logo">iSwap Dwarka</a>
+        <br>
+
+        <!-- GGN -->        
+        <a class="button button-col1 button-entrance hvr-grow hvr-icon-wobble-vertical" href="https://goo.gl/maps/tRGYB3mVfrbsMSeU7" target="_blank" rel="noopener">
+          <img class="icon fadein hvr-icon" src="img/icons/gmaps.png" alt="location Logo">Suncity Gurugram</a>
+        <br>
+
+        <!-- More -->        
+        <!-- <a class="button button-col1 button-entrance hvr-grow hvr-icon-wobble-vertical" href="https://goo.gl/maps/tRGYB3mVfrbsMSeU7" target="_blank" rel="noopener">
+          <img class="icon fadein hvr-icon" src="img/icons/gmaps.png" alt="location Logo">Suggest us</a>
+        <br>         -->
+
+        <!--Footer-->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/push.min.js"></script>
+  <script src="js/vendor/serviceWorker.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+
+    // Push Notification
+    Push.create("We are Expanding",{
+            body: "Come Visit us",
+            icon: '/icon.png',
+            timeout: 200000,
+            onClick: function () {
+                window.focus();
+                this.close();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

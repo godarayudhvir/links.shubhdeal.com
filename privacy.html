@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ShubhDeal | Privacy Policy</title>
+  <meta name="description" content="Find us online!">
+  <meta name="author" content="Yudhvir Singh Godara">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content=ShubhDeal | Privacy Policy" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://link.shubhdeal.com" />
+  <meta property="og:image" content="https://link.shubhdeal.com/img/og.image.png" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="https://link.cyberalliance.in/img/apple-touch.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/main-dark.css">
+
+  <!-- Brand Styles -->
+  <link rel="stylesheet" href="css/brands.css">
+
+  <!-- 3rd Party CSS -->
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+  <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container-left">
+      <div class="row">
+        <div class="column" style="margin-top: 10%">
+          <p>
+            <a href="index.html">⬅️ Back to main page</a>
+          </p>
+
+          <!--
+            Privacy Policy:
+            We recommend adding a Privacy Policy to your cyberlink. Adding one can help you stay compliant 
+            with different privacy legislation and can also help set expectations for your site visitors.
+
+            This is a boilerplate, what is here may not be applicable to you. By default, we give three sections...
+
+            Analytics: where you can add links to analytic services.
+
+            Content From External Platforms: This could be used for CDN services or additional buttons like GitHub hotlinkable buttons.
+
+            Hosting and Backend Infrastructure: For where you host your cyberlink.
+
+            You can remove, edit, and add to these as necessary for your project. 
+          -->
+
+          <!-- Page Name -->
+          <h1>🔒 Privacy Overview</h1>
+
+          <!-- Page Information -->
+          <p>
+            <b
+              >Personal Data collected for the following purposes: </b
+            >
+            <br />
+            <br />
+            <!-- Start Section -->
+            <b>💻 Active Status</b>
+            <br />
+            <br>
+            Notifications are sent based on which page you visit on our site,
+            But we keep no logs of the same.
+            <br />
+            <br />
+            <br>
+            <b>🏢 3rd Party</b>
+            <br>
+            <br>
+            <!-- Here you can add any analytics companies you use and what they track -->
+            <b>1.) Github.com</b><br />
+            The Ste is hosted on Github so there's that.
+            <br>
+            We are soon moving to our own self host.
+            <!-- <br />
+            <br>
+            <b>2.) Github.com</b><br />
+            The Ste is hosted on Github so there's that.
+            <br>
+            We are soon moving to our own self host.
+            <br /> -->
+          </p>
+          <!-- End Section -->
+
+          <!-- Start Section -->
+          <p>
+            <b>📦 Thats all folks</b>
+          <!-- End Section -->
+                      
+        <!--Footer-->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/push.min.js"></script>
+  <script src="js/vendor/serviceWorker.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+
+    // Push Notification
+    Push.create("Hard to trust ayy 😒",{
+            body: "This is a tough world, gotta keep our privacy in check.",
+            icon: '/icon.png',
+            timeout: 200000,
+            onClick: function () {
+                window.focus();
+                this.close();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
